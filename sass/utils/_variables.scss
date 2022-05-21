@@ -1,0 +1,46 @@
+$main-font: Roboto, sans-sefif;
+$secondary-font: Raleway, sans-serif;
+$main-clr: black;
+$blue-clr: #2196f3;
+$secondary-clr: #757575;
+$background-clr: #2f303a;
+$light-clr: #ffffff;
+$button-clr: #f5f4fa;
+$secondary-light-clr: #ffffff99;
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $main-clr;
+}
+
+.header-logo-web {
+    color: $blue-clr;
+
+    & .header-logo-studio {
+        color: $main-clr;
+    }
+}

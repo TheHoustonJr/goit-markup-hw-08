@@ -1,0 +1,40 @@
+.hallery {
+    padding-bottom: 94px;
+}
+
+.hallery-main {
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hallery-list {
+    display: flex;
+
+    & .hallery-item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    width: 100%;
+}
+
+.label {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 27px;
+    font-size: 14px;
+    background: rgba(47, 48, 58, 0.8);
+    color: $light-clr;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,249 @@
+.hero {
+  background-repeat: no-repeat;
+  height: 600px;
+  max-width: 1600px;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background.jpg);
+  margin: auto;
+}
+
+.hero-main {
+  font-family: $main-font;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: $light-clr;
+}
+
+.hero-btn {
+  font-family: $main-font;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  color: $light-clr;
+  background: $blue-clr;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  border-color: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-top: 30px;
+  padding: 10px 32px;
+
+  &:hover {
+    color: $main-clr;
+    background: $button-clr;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.close-x {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1200;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  background: $light-clr;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0,  0.12), 0px 1px 1px rgba(0, 0, 0,  0.14),
+    0px 2px 1px rgba(0, 0, 0,  0.20);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  background: $light-clr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover .close-x {
+    fill: $blue-clr;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+textarea {
+  resize: none;
+}
+
+.legend-banner {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.form-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  text-align: left;
+
+  & label {
+    margin-bottom: 4px;
+  }
+
+  & input {
+    padding: 14px 15px 14px 42px;
+    margin: 0;
+    margin-bottom: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  & textarea {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 11px 16px;
+    height: 120px;
+  }
+}
+
+.form-label {
+    margin-bottom: 4px;
+}
+
+.comment {
+    margin-bottom: 20px;
+}
+
+.svg-name {
+    position: absolute;
+    top: 34px;
+    left: 15px;
+    display: inline-block;
+}
+
+.modal-link {
+    color: $blue-clr;
+    text-decoration: underline;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid $blue-clr;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus ~ .svg-name {
+        fill: $blue-clr;
+            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $secondary-clr;
+    margin-bottom: 30px;
+}
+
+.label-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    position: absolute;
+}
+
+.icon {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $main-clr;
+    border-radius: 2px;
+    margin-right: 9px;
+}
+
+input[type="checkbox"]:hover + .icon {
+  border-color: $blue-clr;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input[type="checkbox"]:checked + .icon {
+  border-color: $blue-clr;
+  background-color: $blue-clr;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.svg-name-icon {
+  position: absolute;
+  top: -0.5px;
+  left: 0px;
+}
+
+.label-checkbox {
+  cursor: pointer;
+}
+
+.input-btn {
+  background: $blue-clr;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  border: 0;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  color: $light-clr;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
