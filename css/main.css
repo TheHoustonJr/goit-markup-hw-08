@@ -45,15 +45,12 @@ img {
   display: none;
 }
 
-.header {
-  border: 1px solid #ececec;
-}
-
 .container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  width: 480px;
 }
 
 .header-logo-web,
@@ -607,10 +604,7 @@ input[type="checkbox"]:checked + .icon {
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding-bottom: 10px;
-}
-
-.paragraph-item {
-  width: 270px;
+  text-align: center;
 }
 
 .paragraph-item::before {
@@ -625,17 +619,23 @@ input[type="checkbox"]:checked + .icon {
   border-radius: 4px;
 }
 
+.paragraph-item:not(:first-child) {
+  margin-top: 30px;
+}
+
 .paragraph-description {
   font-family: var(--main-font);
-  font-weight: normal;
+  font-style: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
-.ul-paragraph:not(:last-child) {
-  margin-right: 30px;
+.paragraph-list {
+  margin: 0;
+  padding: 0;
 }
 
 .antenna::before {
