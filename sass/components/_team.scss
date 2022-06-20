@@ -1,33 +1,40 @@
 .team {
     background-color: $button-clr;
+    width: 480px
+}
+
+.team-svg.list {
+padding-top: 16px;
+        padding-left: 122px;
+        padding-right: 122px;
+        padding-bottom: 24px;
 }
 
 .team-main {
     font-family: $main-font;
     font-weight: bold;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 33px;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .team-item {
-    width: 270px;
-    height: 428px;
+    width: 450px;
     background-color: $light-clr;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-// .team-list {
-//     display: flex;
+.team-list {
+    padding: 0;
 
-//     & .team-item:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+    & .team-item:not(:first-child) {
+        margin-top: 30px;
+    }
+}
 
 .team-name {
     font-family: $main-font;
@@ -46,12 +53,11 @@
     letter-spacing: 0.03em;
     text-align: center;
     color: $secondary-clr;
-    margin-bottom: 16px;
     margin-top: 10px;
 }
 
 .team-container {
-    padding: 30px 32px;
+    padding-top: 30px;
 }
 
 img {
@@ -60,6 +66,7 @@ img {
 
 .team-svg {
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 

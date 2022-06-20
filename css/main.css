@@ -1,6 +1,7 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 480px;
 }
 
 h1,
@@ -699,25 +700,40 @@ input[type="checkbox"]:checked + .icon {
 
 .team {
   background-color: #f5f4fa;
+  width: 480px;
+}
+
+.team-svg.list {
+  padding-top: 16px;
+  padding-left: 122px;
+  padding-right: 122px;
+  padding-bottom: 24px;
 }
 
 .team-main {
   font-family: Roboto, sans-sefif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 33px;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .team-item {
-  width: 270px;
-  height: 428px;
+  width: 450px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list {
+  padding: 0;
+}
+
+.team-list .team-item:not(:first-child) {
+  margin-top: 30px;
 }
 
 .team-name {
@@ -737,12 +753,11 @@ input[type="checkbox"]:checked + .icon {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
-  margin-bottom: 16px;
   margin-top: 10px;
 }
 
 .team-container {
-  padding: 30px 32px;
+  padding-top: 30px;
 }
 
 img {
@@ -753,6 +768,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -795,36 +813,51 @@ img {
 .clients-main {
   font-family: Roboto, sans-sefif;
   font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.clients-list {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-clients:nth-child(-n+4) {
+  margin-bottom: 30px;
+}
+
+.our-clients {
+  width: 210px;
 }
 
 .our-clients .clients-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
-  height: 92px;
-  left: 215px;
-  top: 2493px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
   fill: #afb1b8;
-}
-
-.our-clients:not(:last-child) {
-  margin-right: 30px;
 }
 
 .clients-link:hover,
@@ -843,6 +876,7 @@ img {
 
 .footer {
   background-color: #2f303a;
+  width: 480px;
   height: 256px;
   padding-top: 60px;
   padding-bottom: 60px;
