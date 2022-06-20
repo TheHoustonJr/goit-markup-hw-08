@@ -44,3 +44,13 @@ body {
         color: $main-clr;
     }
 }
+
+img {
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.hallery {
+    display: none;
+}

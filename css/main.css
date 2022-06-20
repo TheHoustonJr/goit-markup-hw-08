@@ -35,6 +35,16 @@ body {
   color: black;
 }
 
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.hallery {
+  display: none;
+}
+
 .header {
   border: 1px solid #ececec;
 }
@@ -314,8 +324,8 @@ body {
 
 .hero {
   background-repeat: no-repeat;
-  height: 600px;
-  max-width: 1600px;
+  height: 400px;
+  width: 480px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
@@ -327,8 +337,8 @@ body {
 .hero-main {
   font-family: Roboto, sans-sefif;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 42px;
   letter-spacing: 0.06em;
   color: #ffffff;
 }
@@ -607,7 +617,7 @@ input[type="checkbox"]:checked + .icon {
   display: block;
   content: "";
   background-color: #f5f4fa;
-  width: 270px;
+  width: 450px;
   height: 120px;
   background-repeat: no-repeat;
   background-position: center;
@@ -622,19 +632,6 @@ input[type="checkbox"]:checked + .icon {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.paragraph-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.paragraph-list .paragraph-item:not(:last-child) {
-  margin-right: 30px;
 }
 
 .ul-paragraph:not(:last-child) {
@@ -723,16 +720,6 @@ input[type="checkbox"]:checked + .icon {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.team-list .team-item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-name {
   font-family: Roboto, sans-sefif;
   font-weight: 500;
@@ -813,15 +800,6 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
-}
-
-.clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .our-clients .clients-link {
@@ -1111,25 +1089,6 @@ img {
 .overlay:hover .overlay-text {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
-
-.wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .legend {

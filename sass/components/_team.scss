@@ -21,13 +21,13 @@
     border-radius: 0px 0px 4px 4px;
 }
 
-.team-list {
-    display: flex;
+// .team-list {
+//     display: flex;
 
-    & .team-item:not(:last-child) {
-        margin-right: 30px;
-    }
-}
+//     & .team-item:not(:last-child) {
+//         margin-right: 30px;
+//     }
+// }
 
 .team-name {
     font-family: $main-font;
