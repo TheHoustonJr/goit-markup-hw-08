@@ -1,18 +1,23 @@
 .footer {
     background-color: $background-clr;
     width: 480px;
-    height: 256px;
+    height: 603px;
     padding-top: 60px;
     padding-bottom: 60px;
 
     & .container {
         display:flex;
-        align-items: baseline;
+        align-items: center;
     }
 }
 
+.footer-list {
+    padding: 0;
+    margin-bottom: 60px;
+}
+
 .adress {
-    margin-right: 70px;
+    text-align: center;
 }
 
 .footer-map:hover,
@@ -27,7 +32,7 @@
 
 .footer-logo-web {
     color: $blue-clr;
-
+  
     & .footer-logo-studio {
         color: $light-clr;
     }
@@ -66,7 +71,7 @@
 }
 
 .footer-item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
 }
 
 .join {
@@ -79,14 +84,18 @@
 }
 
 .join-div {
-    align-items: flex-start;
-    width: 206px;
-    height: 80px;
+  text-align: center;
 }
 
 .join-item {
     display: flex;
-    justify-content: space-between;
+   padding: 0;
+   justify-content: center;
+   margin-bottom: 60px;
+
+   & :not(:last-child) {
+       margin-right: 10px;
+   }
 }
 
 .join-list {

@@ -877,7 +877,7 @@ img {
 .footer {
   background-color: #2f303a;
   width: 480px;
-  height: 256px;
+  height: 603px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -886,13 +886,18 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-list {
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 .adress {
-  margin-right: 70px;
+  text-align: center;
 }
 
 .footer-map:hover,
@@ -947,7 +952,7 @@ img {
 }
 
 .footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .join {
@@ -960,20 +965,22 @@ img {
 }
 
 .join-div {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 206px;
-  height: 80px;
+  text-align: center;
 }
 
 .join-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  padding: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.join-item :not(:last-child) {
+  margin-right: 10px;
 }
 
 .join-list {
@@ -1132,6 +1139,7 @@ img {
   line-height: 1.142;
   color: #ffffff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .email-footer {
@@ -1142,27 +1150,24 @@ img {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: #2F303A;
   margin-right: 10px;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .button-submit {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   width: 200px;
   height: 50px;
   background: #2196f3;
@@ -1175,7 +1180,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   border: 0px;
-  padding: 0px;
+  margin: 0 auto;
 }
 
 .telegram {
