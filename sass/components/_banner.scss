@@ -66,8 +66,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background: $light-clr;
   box-shadow: 0px 1px 3px rgba(0, 0, 0,  0.12), 0px 1px 1px rgba(0, 0, 0,  0.14),
     0px 2px 1px rgba(0, 0, 0,  0.20);
@@ -106,11 +106,13 @@ textarea {
 .legend-banner {
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 30px;
   text-align: center;
   letter-spacing: 0.03em;
   margin-top: 40px;
   margin-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .form-field {
@@ -182,8 +184,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.03em;
     color: $secondary-clr;
     margin-bottom: 30px;
