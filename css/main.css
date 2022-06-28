@@ -46,6 +46,11 @@ img {
   display: none;
 }
 
+.header {
+  border: 1px solid #ececec;
+  width: 480px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -164,6 +169,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
 }
 
 .mobile-social-item {
@@ -1154,6 +1160,14 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.portfolio-list:nth-last-child(-n+2) {
+  margin-top: 15px;
+}
+
+.portfolio-list:not(:last-child) {
+  margin-right: 8px;
+}
+
 .portfolio-main {
   font-family: Roboto, sans-sefif;
   font-weight: bold;
@@ -1173,30 +1187,21 @@ img {
 }
 
 .portfolio-item {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-}
-
-.portfolio-list:not(:last-child) {
-  margin-right: 8px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .portfolio-box {
-  width: 370px;
-  height: 405px;
-  margin-right: 30px;
+  width: 450px;
+  height: 404px;
 }
 
-.portfolio-box:nth-child(3n) {
-  margin: 0;
-}
-
-.portfolio-box:nth-child(-n + 6) {
+.portfolio-box:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -1215,11 +1220,7 @@ img {
 }
 
 .portfolio-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 0;
 }
 
 .overlay {
