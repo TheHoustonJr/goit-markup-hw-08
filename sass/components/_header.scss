@@ -1,5 +1,5 @@
 .header {
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
     width: 480px;
 }
 
@@ -36,6 +36,7 @@
     width: 480px;
     height: 100%;
     background-color: #ececec;
+    z-index: 1;
 
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;

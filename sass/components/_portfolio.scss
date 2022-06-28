@@ -52,19 +52,10 @@
     margin-bottom: 40px;
 }
 
-.portfolio-box {
-    width: 450px;
-    height: 404px;
-
-    &:not(:last-child) {
-        margin-bottom: 30px
-    }
-
-    &:hover {
+.portfolio-box:hover {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
             transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
 .portfolio-container {
@@ -76,4 +67,9 @@
 
 .portfolio-image {
     padding: 0;
+    margin-bottom: 30px;
+}
+
+.portfolio-box {
+    margin-bottom: 30px;
 }
