@@ -1,3 +1,5 @@
+@media screen and (max-width: 480px) {
+
 .paragraph-main {
     font-family: var(--main-font);
     font-weight: bold;
@@ -73,4 +75,6 @@
 
 .astronaut::before {
     background-image: url(../images/svg/astronaut.svg);
+}
+
 }
