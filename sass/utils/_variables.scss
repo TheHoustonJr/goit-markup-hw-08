@@ -11,7 +11,8 @@ $secondary-light-clr: #ffffff99;
 .section {
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 480px;
+    min-width: 320px;
+    max-width: 480px;
 }
 
 h1,
@@ -36,6 +37,8 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: $main-clr;
+    min-width: 320px;
+    max-width: 480px;
 }
 
 .header-logo-web {

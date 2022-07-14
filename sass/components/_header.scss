@@ -1,14 +1,17 @@
-@media screen and (max-width: 480px) {
-
     .header {
         border-bottom: 1px solid #ececec;
-        width: 480px;
     }
+
+.header-nav {
+    display: flex;
+        justify-content: space-between;
+}
 
     .container {
         padding-left: 15px;
         padding-right: 15px;
-        width: 480px;
+        min-width:320px;
+        max-width: 480px;
     }
 
     .header-logo-web,
@@ -21,12 +24,10 @@
     }
 
     .button-open {
-        display: inline-flex;
         margin: 0;
         padding: 0;
         background-color: transparent;
         border: none;
-        margin-left: 284px;
     }
 
     .menu-container {
@@ -131,7 +132,6 @@
         fill: $blue-clr;
     }
 
-}
 
 @media (max-width: 768px) {
 
