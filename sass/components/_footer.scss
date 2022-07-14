@@ -1,6 +1,7 @@
 .footer {
     background-color: $background-clr;
-    width: 480px;
+    min-width: 320px;
+    max-width: 480px;
     height: 603px;
     padding-top: 60px;
     padding-bottom: 60px;
