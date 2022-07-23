@@ -32,6 +32,7 @@
     color: $light-clr;
     margin-bottom: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .email-footer {
@@ -45,6 +46,7 @@
     background-color: #2F303A;
     color: $light-clr;
     margin: 0 auto 20px;
+    display: block;
 }
 
 .button-submit {

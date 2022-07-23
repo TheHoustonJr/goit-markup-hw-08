@@ -163,6 +163,7 @@ img {
 .mobile-navigation {
   margin: 0;
   margin-top: 46px;
+  padding-left: 15px;
 }
 
 .mobile-social-list {
@@ -179,6 +180,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  padding-left: 15px;
 }
 
 .mobile-social-item {
@@ -1267,6 +1269,9 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .email-footer {
@@ -1282,6 +1287,7 @@ img {
   background-color: #2F303A;
   color: #ffffff;
   margin: 0 auto 20px;
+  display: block;
 }
 
 .button-submit {
