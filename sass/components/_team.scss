@@ -103,18 +103,15 @@ img {
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .team {
             background-color: $button-clr;
-            min-width: 768px;
+            min-width: 767px;
             max-width: 1119px;
         }
     
         .team-svg.list {
-            padding-top: 29px;
-            padding-left: 75px;
-            padding-right: 75px;
-            padding-bottom: 36px;
+            padding: 29px 75px 36px 75px;
         }
     
         .team-main {
