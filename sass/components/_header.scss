@@ -265,6 +265,9 @@
             }
         }
 
+        .current::after {
+            display: block;
+        }
 }
 
 
