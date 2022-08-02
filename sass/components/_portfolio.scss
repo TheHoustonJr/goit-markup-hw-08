@@ -21,6 +21,10 @@
 
 .portfolio-list:nth-last-child(-n+2) {
     margin-top: 15px;
+
+    @media screen and (min-width: 767px) {
+        margin-top: 0px;
+    }
 }
 
 .portfolio-list:not(:last-child) {
@@ -72,4 +76,23 @@
 
 .portfolio-box {
     margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 767px) {
+    .box {
+        width: 354px;
+        height: 440px;
+        }
+
+        .portfolio-image {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .portfolio-item {
+            justify-content: center;
+        }
+
 }

@@ -157,6 +157,11 @@
 // ПЛАНШЕТ//
 
 @media (min-width: 767px) {
+    .header {
+            min-width: 767px;
+            max-width: 1119px;
+        }
+    
     .container {
         min-width: 767px;
         max-width: 1119px;

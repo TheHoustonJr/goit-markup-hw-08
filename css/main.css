@@ -225,6 +225,10 @@ img {
 }
 
 @media (min-width: 767px) {
+  .header {
+    min-width: 767px;
+    max-width: 1119px;
+  }
   .container {
     min-width: 767px;
     max-width: 1119px;
@@ -786,58 +790,77 @@ input[type="checkbox"]:checked + .icon {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
     margin: auto;
   }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
 }
 
-@media screen and (max-width: 480px) {
-  .paragraph-main {
-    font-family: var(--main-font);
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    padding-bottom: 10px;
-    text-align: center;
-  }
-  .paragraph-item::before {
-    display: block;
-    content: "";
-    background-color: #f5f4fa;
-    min-width: 290px;
-    max-width: 450px;
-    height: 120px;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 30px;
-    border-radius: 4px;
-  }
-  .paragraph-item:not(:first-child) {
-    margin-top: 30px;
-  }
-  .paragraph-description {
-    font-family: var(--main-font);
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: #757575;
-  }
-  .paragraph-list {
-    margin: 0;
-    padding: 0;
-  }
-  .antenna::before {
-    background-image: url(../images/svg/antenna.svg);
-  }
-  .clock::before {
-    background-image: url(../images/svg/clock.svg);
-  }
-  .notebook::before {
-    background-image: url(../images/svg/notebook.svg);
-  }
-  .astronaut::before {
-    background-image: url(../images/svg/astronaut.svg);
-  }
+.paragraph-main {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.paragraph-item::before {
+  display: block;
+  content: "";
+  background-color: #f5f4fa;
+  min-width: 290px;
+  max-width: 450px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.paragraph-item:not(:first-child) {
+  margin-top: 30px;
+}
+
+.paragraph-description {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.paragraph-list {
+  margin: 0;
+  padding: 0;
+}
+
+.antenna::before {
+  background-image: url(../images/svg/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/svg/clock.svg);
+}
+
+.notebook::before {
+  background-image: url(../images/svg/notebook.svg);
+}
+
+.astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
 }
 
 @media screen and (min-width: 767px) {
@@ -1566,6 +1589,12 @@ input[type="checkbox"]:checked + .icon {
   margin-top: 15px;
 }
 
+@media screen and (min-width: 767px) {
+  .portfolio-list:nth-last-child(-n+2) {
+    margin-top: 0px;
+  }
+}
+
 .portfolio-list:not(:last-child) {
   margin-right: 8px;
 }
@@ -1619,6 +1648,28 @@ input[type="checkbox"]:checked + .icon {
 
 .portfolio-box {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  .box {
+    width: 354px;
+    height: 440px;
+  }
+  .portfolio-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio-item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .overlay {
