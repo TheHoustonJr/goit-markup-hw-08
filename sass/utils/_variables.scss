@@ -16,15 +16,16 @@ $secondary-light-clr: #ffffff99;
     
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .section {
         padding-top: 60px;
         padding-bottom: 60px;
-        min-width: 768px;
+        min-width: 767px;
         max-width: 1119px;
     }
     
 }
+
 
 h1,
 h2,
