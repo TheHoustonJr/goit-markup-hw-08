@@ -12,11 +12,6 @@
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
-        max-width: 1600px;
-
-        @media screen and (min-width: 480px) {
-            width: 480px;
-        }
     }
 
     .header-logo-web,
@@ -160,12 +155,7 @@
     .header {
             min-width: 767px;
         }
-    
-    .container {
-        min-width: 767px;
-        max-width: 1119px;
-    }
-    
+       
     .js-open-menu {
             display: none;
         }
@@ -266,13 +256,15 @@
         align-items: center;
     }
 
+       @media screen and (max-width: 1199px) {
         .header-info {
-            display: flex;
-            
-            &:not(:last-child) {
-                margin-bottom: 10px;
+                display: flex;
+        
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
             }
-        }
+       }
 
         .current::after {
             display: block;
@@ -280,7 +272,7 @@
 }
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
     .link-svg {
         fill: $secondary-clr;
         margin-right: 10px;
@@ -289,27 +281,25 @@
     }
 }
 
-@media (min-width: 1201px) {
-    header {
+@media (min-width: 1200px) {
+    .header {
+        min-width:1200px;
         border: 1px solid #ececec;
     }
 
     .container {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 1600px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+}
+
 
     .div-container {
         display: flex;
         height: 80px;
-    }
-
-    .header-logo-web {
-        padding-top: 24px;
-        padding-bottom: 25px;
+        justify-content: space-between;
     }
 
     .header-logo-web,
@@ -362,12 +352,13 @@
 
     .header-nav {
         display: flex;
+        justify-content: space-between;
     }
 
     .header-list {
         display: flex;
-        margin-left: 93px;
         align-items: center;
+        margin-left: 93px;
 
         & .header-item:not(:last-child) {
             margin-right: 50px;
@@ -399,13 +390,12 @@
     }
 
     .auth-nav {
-        align-items: center;
-        margin-left: auto;
         display: flex;
+        padding: 0;
     }
 
     .header-info:not(:first-child) {
-        padding-left: 50px;
+        padding-left: 30px;
     }
 
     .header-navigation {
@@ -415,10 +405,9 @@
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        padding-top: 32px;
-        padding-bottom: 32px;
         align-items: center;
         display: flex;
+        justify-content: center;
 
         &:hover .link-svg,
         &:focus .link-svg {

@@ -81,8 +81,10 @@
 
 @media screen and (min-width: 767px) {
     .box {
-        width: 354px;
-        height: 440px;
+        min-width: 354px;
+        max-width: 370px;
+        min-height: 404px;
+        max-height: 440px;
     }
 
     .portfolio-image {
@@ -96,11 +98,9 @@
         justify-content: center;
     }
 
-    .portfolio-container {
-        height: 146px;
+    @media screen and (max-width: 1199px) {
+        .portfolio-container {
+                height: 146px;
+            }
     }
-    
-
-}
-
-@media screen and (min-width: 1200px) {}
+    }
