@@ -1,9 +1,7 @@
-@media screen and (max-width: 767px) {
-
 .team {
     background-color: $button-clr;
     min-width: 320px;
-    max-width: 480px;
+    max-width: 1600px;
 }
 
 .team-svg.list {
@@ -101,13 +99,11 @@ img {
     }
 }
 
-}
 
 @media screen and (min-width: 767px) {
     .team {
             background-color: $button-clr;
             min-width: 767px;
-            max-width: 1119px;
         }
     
         .team-svg.list {
