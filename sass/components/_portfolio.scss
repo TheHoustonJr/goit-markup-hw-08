@@ -74,7 +74,7 @@
     margin-bottom: 30px;
 }
 
-.portfolio-box:nth-child(-n+1) {
+.portfolio-box:not(:last-child) {
     margin-bottom: 30px;
 }
 
@@ -90,14 +90,13 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 0px;
-
     }
 
     .portfolio-item {
         justify-content: center;
     }
 
-    .portfolio-container {
+    .portfolio-container:nth-child(2) {
         padding: 20px 24px 67px 24px;
     }
 
