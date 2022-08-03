@@ -227,7 +227,6 @@ img {
 @media (min-width: 767px) {
   .header {
     min-width: 767px;
-    max-width: 1119px;
   }
   .container {
     min-width: 767px;
@@ -830,6 +829,12 @@ input[type="checkbox"]:checked + .icon {
 
 .paragraph-item:not(:first-child) {
   margin-top: 30px;
+}
+
+@media screen and (min-width: 767px) {
+  .paragraph-item:not(:first-child) {
+    margin-top: 0;
+  }
 }
 
 .paragraph-description {
@@ -1646,7 +1651,7 @@ input[type="checkbox"]:checked + .icon {
   margin-bottom: 30px;
 }
 
-.portfolio-box {
+.portfolio-box:nth-child(-n+1) {
   margin-bottom: 30px;
 }
 
@@ -1664,11 +1669,15 @@ input[type="checkbox"]:checked + .icon {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 0px;
   }
   .portfolio-item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .portfolio-container {
+    padding: 20px 24px 67px 24px;
   }
 }
 

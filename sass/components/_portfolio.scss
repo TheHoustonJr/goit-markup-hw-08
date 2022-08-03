@@ -9,7 +9,7 @@
     border-color: transparent;
     padding: 6px 22px;
     cursor: pointer;
-   
+
     &:hover {
         color: $light-clr;
         background: $blue-clr;
@@ -57,9 +57,9 @@
 }
 
 .portfolio-box:hover {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-            transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-container {
@@ -74,7 +74,7 @@
     margin-bottom: 30px;
 }
 
-.portfolio-box {
+.portfolio-box:nth-child(-n+1) {
     margin-bottom: 30px;
 }
 
@@ -83,16 +83,24 @@
     .box {
         width: 354px;
         height: 440px;
-        }
+    }
 
-        .portfolio-image {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
+    .portfolio-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 0px;
 
-        .portfolio-item {
-            justify-content: center;
-        }
+    }
+
+    .portfolio-item {
+        justify-content: center;
+    }
+
+    .portfolio-container {
+        padding: 20px 24px 67px 24px;
+    }
 
 }
+
+@media screen and (min-width: 1200px) {}

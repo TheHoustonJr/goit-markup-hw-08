@@ -26,6 +26,10 @@
 
 .paragraph-item:not(:first-child) {
     margin-top: 30px;
+
+    @media screen and (min-width: 767px) {
+        margin-top: 0;
+    }
 }
 
 .paragraph-description {
@@ -128,4 +132,8 @@
         .astronaut::before {
             background-image: url(../images/svg/astronaut.svg);
         }
+}
+
+@media screen and (min-width: 1200px) {
+    
 }
