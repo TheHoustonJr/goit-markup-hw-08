@@ -1,14 +1,14 @@
 .hero {
   background-repeat: no-repeat;
   max-height: 400px;
-  // min-width: 320px;
+  min-width: 320px;
   max-width: 1600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)),
-    url('../images/mobile-1.jpg');
+    url('../images/mobile-2.jpg');
   margin: auto;
 }
 
@@ -20,7 +20,7 @@ screen and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url('../images/mobile-2.jpg');
+      url('../images/mobile-1.jpg');
   }
 }
 
@@ -264,7 +264,7 @@ input[type="checkbox"]:checked+.icon {
 @media screen and (min-width: 767px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)), url('../images/tablet-1.jpg');
+        rgba(47, 48, 58, 0.4)), url('../images/tablet-2.jpg');
   }
 
 
@@ -276,7 +276,7 @@ input[type="checkbox"]:checked+.icon {
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url('../images/tablet-2.jpg');
+        url('../images/tablet-1.jpg');
     }
   }
 
