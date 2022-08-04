@@ -74,10 +74,11 @@
     margin-bottom: 30px;
 }
 
-.portfolio-box:not(:last-child) {
-    margin-bottom: 30px;
+@media screen and (max-width:1199px) {
+    .portfolio-box:not(:last-child) {
+            margin-bottom: 30px;
+        }
 }
-
 
 @media screen and (min-width: 767px) {
     .box {
@@ -103,4 +104,10 @@
                 height: 146px;
             }
     }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .portfolio-box:nth-child(3n) {
+                margin: 0;
+            }
     }

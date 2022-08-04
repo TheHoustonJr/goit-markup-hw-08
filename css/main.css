@@ -499,15 +499,21 @@ img {
 
 .hero {
   background-repeat: no-repeat;
-  height: 400px;
-  min-width: 320px;
-  max-width: 480px;
+  max-height: 400px;
+  max-width: 1600px;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 280px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile-1.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-1.jpg");
   margin: auto;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile-2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile-2.jpg");
+  }
 }
 
 .hero-main {
@@ -780,17 +786,19 @@ input[type="checkbox"]:checked + .icon {
 
 @media screen and (min-width: 767px) {
   .hero {
-    background-repeat: no-repeat;
-    height: 400px;
-    min-width: 767px;
-    max-width: 1119px;
-    text-align: center;
-    padding-top: 200px;
-    padding-bottom: 280px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
-    margin: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet-1.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-1.jpg");
   }
+}
+
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet-2.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet-2.jpg");
+  }
+}
+
+@media screen and (min-width: 767px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -809,13 +817,12 @@ input[type="checkbox"]:checked + .icon {
 @media screen and (min-width: 1200px) {
   .hero {
     background-repeat: no-repeat;
-    height: 600px;
-    max-width: 1600px;
+    max-height: 600px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 280px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/background.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/background.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/background.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
     margin: auto;
   }
   .hero-main {
@@ -2269,8 +2276,10 @@ img {
   margin-bottom: 30px;
 }
 
-.portfolio-box:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 1199px) {
+  .portfolio-box:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -2301,6 +2310,12 @@ img {
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .portfolio-container {
     height: 146px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-box:nth-child(3n) {
+    margin: 0;
   }
 }
 
