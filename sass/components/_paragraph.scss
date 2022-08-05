@@ -12,17 +12,17 @@
     .paragraph-item {
     
             &::before {
-                display: block;
+                display: inline-block;
                 content: "";
                 background-color: $button-clr;
                 min-width: 290px;
-                max-width: 1600px;
+                max-width: 450px;
                 height: 120px;
                 background-repeat: no-repeat;
                 background-position: center;
                 margin-bottom: 30px;
                 border-radius: 4px;
-                justify-content: center;
+                
             }
         }
 }

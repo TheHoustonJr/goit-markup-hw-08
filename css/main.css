@@ -2,7 +2,6 @@
   padding-top: 30px;
   padding-bottom: 30px;
   min-width: 320px;
-  max-width: 1600px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1076,19 +1075,16 @@ input[type="checkbox"]:checked + .icon {
 
 @media screen and (max-width: 767px) {
   .paragraph-item::before {
-    display: block;
+    display: inline-block;
     content: "";
     background-color: #f5f4fa;
     min-width: 290px;
-    max-width: 1600px;
+    max-width: 450px;
     height: 120px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
     border-radius: 4px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 
@@ -1302,7 +1298,6 @@ input[type="checkbox"]:checked + .icon {
 .team {
   background-color: #f5f4fa;
   min-width: 320px;
-  max-width: 1600px;
 }
 
 @media screen and (max-width: 766px) {
@@ -1324,7 +1319,7 @@ input[type="checkbox"]:checked + .icon {
 @media screen and (max-width: 766px) {
   .team-item {
     min-width: 290px;
-    max-width: 1600px;
+    max-width: 450px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1817,7 +1812,6 @@ img {
 .footer {
   background-color: #2f303a;
   min-width: 320px;
-  max-width: 1600px;
   height: 603px;
   padding-bottom: 30px;
   padding-top: 30px;
