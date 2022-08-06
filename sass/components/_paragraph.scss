@@ -8,23 +8,34 @@
     text-align: center;
 }
 
+
+@media screen and (max-width: 766px) {
+    .container {
+            padding: 0 15px;
+            margin: 0 auto;
+            min-width: 320px;
+            max-width: 480px;
+        }
+    
+}
+
 @media screen and (max-width: 767px) {
     .paragraph-item {
-    
-            &::before {
-                display: inline-block;
-                content: "";
-                background-color: $button-clr;
-                min-width: 290px;
-                max-width: 450px;
-                height: 120px;
-                background-repeat: no-repeat;
-                background-position: center;
-                margin-bottom: 30px;
-                border-radius: 4px;
-                
-            }
+
+        &::before {
+            display: inline-block;
+            content: "";
+            background-color: $button-clr;
+            min-width: 100%;
+            max-width: 450px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            border-radius: 4px;
+
         }
+    }
 }
 
 .paragraph-item:not(:first-child) {
@@ -52,156 +63,156 @@
 }
 
 .antenna::before {
-    background-image: url(../images/svg/antenna.svg);
+    background-image: url('../images/svg/antenna.svg');
 }
 
 .clock::before {
-    background-image: url(../images/svg/clock.svg);
+    background-image: url('../images/svg/clock.svg');
 }
 
 .notebook::before {
-    background-image: url(../images/svg/notebook.svg);
+    background-image: url('../images/svg/notebook.svg');
 }
 
 .astronaut::before {
-    background-image: url(../images/svg/astronaut.svg);
+    background-image: url('../images/svg/astronaut.svg');
 }
 
 @media screen and (min-width: 767px) {
-    
+
     .paragraph-list {
         justify-content: space-between;
         flex-wrap: wrap;
         display: flex;
     }
-    
-    .paragraph-item {
-            width: 354px;
-            height: -1px;
-    }
-    
-        .paragraph-main {
-            font-family: var(--main-font);
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            padding-bottom: 10px;
-        }
-    
-        @media screen and (max-width: 1199px) {
-            .paragraph-item {
-            
-                    &::before {
-                        display: block;
-                        content: "";
-                        background-color: $button-clr;
-                        min-width: 290px;
-                        max-width: 450px;
-                        height: 120px;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                        margin-bottom: 30px;
-                        border-radius: 4px;
-                    }
-            
-                    &:nth-last-child(-n+2) {
-                        margin-top: 30px;
-                    }
-                }
-        }
-    
-        .paragraph-description {
-            font-family: var(--main-font);
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: $secondary-clr;
-        }
-    
-    
-        .antenna::before {
-            background-image: url(../images/svg/antenna.svg);
-        }
-    
-        .clock::before {
-            background-image: url(../images/svg/clock.svg);
-        }
-    
-        .notebook::before {
-            background-image: url(../images/svg/notebook.svg);
-        }
-    
-        .astronaut::before {
-            background-image: url(../images/svg/astronaut.svg);
-        }
-}
 
-@media screen and (min-width: 1200px) {
+    .paragraph-item {
+        width: 354px;
+        height: -1px;
+    }
+
     .paragraph-main {
-            font-family: var(--main-font);
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 1.14;
-            letter-spacing: 0.03em;
-            padding-bottom: 10px;
-        }
-    
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        padding-bottom: 10px;
+    }
+
+    @media screen and (max-width: 1199px) {
         .paragraph-item {
-            width: 270px;
-    
+
             &::before {
                 display: block;
                 content: "";
                 background-color: $button-clr;
-                width: 270px;
+                min-width: 290px;
+                max-width: 450px;
                 height: 120px;
                 background-repeat: no-repeat;
                 background-position: center;
                 margin-bottom: 30px;
                 border-radius: 4px;
             }
-        }
-    
-        .paragraph-description {
-            font-family: var(--main-font);
-            font-weight: normal;
-            font-size: 14px;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: $secondary-clr;
-        }
-    
-        .paragraph-list {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-    
-            & .paragraph-item:not(:last-child) {
-                margin-right: 30px;
+
+            &:nth-last-child(-n+2) {
+                margin-top: 30px;
             }
         }
-    
-        .ul-paragraph:not(:last-child) {
+    }
+
+    .paragraph-description {
+        font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondary-clr;
+    }
+
+
+    .antenna::before {
+        background-image: url(../images/svg/antenna.svg);
+    }
+
+    .clock::before {
+        background-image: url(../images/svg/clock.svg);
+    }
+
+    .notebook::before {
+        background-image: url(../images/svg/notebook.svg);
+    }
+
+    .astronaut::before {
+        background-image: url(../images/svg/astronaut.svg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .paragraph-main {
+        font-family: var(--main-font);
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        padding-bottom: 10px;
+    }
+
+    .paragraph-item {
+        width: 270px;
+
+        &::before {
+            display: block;
+            content: "";
+            background-color: $button-clr;
+            width: 270px;
+            height: 120px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+    }
+
+    .paragraph-description {
+        font-family: var(--main-font);
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $secondary-clr;
+    }
+
+    .paragraph-list {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        & .paragraph-item:not(:last-child) {
             margin-right: 30px;
         }
-    
-        .antenna::before {
-            background-image: url(../images/svg/antenna.svg);
-        }
-    
-        .clock::before {
-            background-image: url(../images/svg/clock.svg);
-        }
-    
-        .notebook::before {
-            background-image: url(../images/svg/notebook.svg);
-        }
-    
-        .astronaut::before {
-            background-image: url(../images/svg/astronaut.svg);
-        }
+    }
+
+    .ul-paragraph:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .antenna::before {
+        background-image: url(../images/svg/antenna.svg);
+    }
+
+    .clock::before {
+        background-image: url(../images/svg/clock.svg);
+    }
+
+    .notebook::before {
+        background-image: url(../images/svg/notebook.svg);
+    }
+
+    .astronaut::before {
+        background-image: url(../images/svg/astronaut.svg);
+    }
 }

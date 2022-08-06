@@ -77,10 +77,8 @@ img {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 .header-logo-web,
@@ -1073,12 +1071,21 @@ input[type="checkbox"]:checked + .icon {
   text-align: center;
 }
 
+@media screen and (max-width: 766px) {
+  .container {
+    padding: 0 15px;
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 480px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .paragraph-item::before {
     display: inline-block;
     content: "";
     background-color: #f5f4fa;
-    min-width: 290px;
+    min-width: 100%;
     max-width: 450px;
     height: 120px;
     background-repeat: no-repeat;
@@ -1114,19 +1121,19 @@ input[type="checkbox"]:checked + .icon {
 }
 
 .antenna::before {
-  background-image: url(../images/svg/antenna.svg);
+  background-image: url("../images/svg/antenna.svg");
 }
 
 .clock::before {
-  background-image: url(../images/svg/clock.svg);
+  background-image: url("../images/svg/clock.svg");
 }
 
 .notebook::before {
-  background-image: url(../images/svg/notebook.svg);
+  background-image: url("../images/svg/notebook.svg");
 }
 
 .astronaut::before {
-  background-image: url(../images/svg/astronaut.svg);
+  background-image: url("../images/svg/astronaut.svg");
 }
 
 @media screen and (min-width: 767px) {
