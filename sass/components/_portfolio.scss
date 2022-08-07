@@ -76,8 +76,8 @@
 
 @media screen and (max-width:1199px) {
     .portfolio-box:not(:last-child) {
-            margin-bottom: 30px;
-        }
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 767px) {
@@ -101,17 +101,19 @@
 
     @media screen and (max-width: 1199px) {
         .portfolio-container {
-                height: 146px;
-            }
+            height: 146px;
+        }
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .portfolio-box:nth-child(3n) {
+        margin: 0;
+
+        &:nth-child(-n+6) {
+            margin-bottom: 30px;
+        }
+
     }
 
-    @media screen and (min-width: 1200px) {
-        .portfolio-box:nth-child(3n) {
-                margin: 0;
-            }
-
-                        .portfolio-box:nth-child(-n+6) {
-                            margin-bottom: 30px;
-                        }
-    }
+}
